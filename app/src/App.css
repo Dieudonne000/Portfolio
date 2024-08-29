@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Acorn';
+    src: url('fonts/Acorn-regular.otf') format('truetype');
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+}
+
+ul,.Hero,.Ac{
+    font-family: 'Acorn', sans-serif;
+}
+
