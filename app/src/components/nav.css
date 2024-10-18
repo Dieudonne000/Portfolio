@@ -1,124 +1,148 @@
 div {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar{
-    z-index: 1;
-    margin-top: 60px;
-    position: fixed;
-    box-shadow: 0 4px 30px rgba(0, 140, 255, 0.16);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(92, 178, 253, 0.3);
+.navbar {
+  z-index: 1;
+  margin-top: 60px;
+  position: fixed;
+  box-shadow: 0 4px 30px rgba(0, 140, 255, 0.16);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(92, 178, 253, 0.3);
 }
 div ul {
-    background-color: rgba(18, 60, 72, 0.5);
-    border-radius: 50px;
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
-    display: flex;
+  background-color: rgba(18, 60, 72, 0.5);
+  border-radius: 50px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 div ul li {
-    padding: 12px 30px;
-    margin: 5px;
-    color: white;
-    cursor: pointer; 
-    text-align: center;
+  padding: 12px 30px;
+  margin: 5px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
 }
 
 div ul li.active {
-    background-color: #035B73;
-    border-radius: 50px; 
+  background-color: #035b73;
+  border-radius: 50px;
 }
 
-div ul li.active:hover{
-    background-color: #036985;
+div ul li.active:hover {
+  background-color: #036985;
 }
 
 div ul li:hover {
-    background-color: #035B73; 
-    border-radius: 50px; 
+  background-color: #035b73;
+  border-radius: 50px;
 }
 
-.Hero{
-    position: relative;
-    margin-top: 150px;
-    font-size: 45px;
-    text-align: center;
-    color: white;
-    margin-bottom: 70px;
+.Hero {
+  position: relative;
+  margin-top: 150px;
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  margin-bottom: 70px;
 }
 
-.Hero p{
-    font-size: 20px;
+.Hero p {
+  font-size: 20px;
 }
 
 .about {
-    width: 90%;
-    height: 400px;
-    border-radius: 50px;
-    background: rgb(1,86,111);
-    background: linear-gradient(310deg, rgba(1,86,111,1) 0%, rgba(0,120,154,1) 100%);
+  width: 90%;
+  height: 500px;
+  border-radius: 50px;
+  background: rgb(1, 86, 111);
+  background: linear-gradient(
+    310deg,
+    rgba(1, 86, 111, 1) 0%,
+    rgba(0, 120, 154, 1) 100%
+  );
 }
 
-.arc,.arrows,.crs,.tri{
-    position: absolute;
+.arc,
+.arrows,
+.crs,
+.tri {
+  position: absolute;
 }
-.arrows{
-            top: -10px;
-            left:-200px;
-            z-Index: -1; 
-}
-
-.crs{
-    top: 250px;
-    left:-150px
+.arrows {
+  top: -10px;
+  left: -200px;
+  z-index: -1;
 }
 
-.arc{
-    top:-10px;
-    right: -100px;
+.crs {
+  top: 250px;
+  left: -150px;
 }
 
-.tri{
-    top:300px;
-    right: -100px;
-    will-change: filter;
-    transition: filter 300ms;
+.arc {
+  top: -10px;
+  right: -100px;
 }
 
-.tri:hover{
-    filter: drop-shadow(0 10 1em #ffc40088);
+.tri {
+  top: 300px;
+  right: -100px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.tri:hover {
+  filter: drop-shadow(0 10 1em #ffc40088);
 }
 
 @keyframes logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
   }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .tri:hover {
-      animation: logo-spin infinite 10s linear;
-    }
+  to {
+    transform: rotate(360deg);
   }
+}
 
-  .about h1{
-    color: white;
+@media (prefers-reduced-motion: no-preference) {
+  .tri:hover {
+    animation: logo-spin infinite 10s linear;
   }
+}
 
-  .about .pic{
+.about h1 {
+  color: white;
+}
+
+.about .content{
     position: relative;
-    border-radius: 20px;
-    width: 200px;
-    height: 270px;
-  }
+    display: flex;
+    flex-direction: row;
+}
+
+.about .content img{
+    margin-left: 0;
+    max-width: 150px;
+}
+
+.about .content p{
+    max-width: 700px;
+    margin-left: 40px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+
+.title-out{
+  color: white;
+  margin-top: 150px;
+}

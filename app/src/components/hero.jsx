@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import './nav.css'
+import './main.css'
 import arrows from '/public/Arrows.svg'
 import arc from '/public/arc.svg'
 import tri from '/public/triangle.svg'
