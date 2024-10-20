@@ -7,16 +7,16 @@ import crs from '/public/cross.svg'
 
 function Hero() {
     return (
-        <div className='Hero'>
-            <img src={arrows} alt="background-shape" className='arrows' />
-            <img src={crs} alt="background-shape" className='crs' />
-            <h1>
+        <div className='container'>
+            <img src={arrows} alt="background-shape" className='item arrows' />
+            <img src={arc} alt="background-shape" className='item arc' />
+            <h1 className='item hero'>
             Hi.I'm Dieudonne.<br></br>
             A Web developer 
             </h1>
-            <img src={arc} alt="background-shape" className='arc' />
-            <img src={tri} alt="background-shape" className='tri' />
-            <p>Hi I'm Passionate about creating outstanding webapps</p>
+            <img src={crs} alt="background-shape" className='item crs' />
+            <img src={tri} alt="background-shape" className='item tri' />
+            <p className='item sub'>Hi I'm Passionate about creating outstanding webapps</p>
         </div>
     )
 }
