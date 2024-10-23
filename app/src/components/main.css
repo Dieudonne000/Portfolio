@@ -112,7 +112,8 @@ div ul li:hover {
   grid-template-columns: 0.3fr 3fr 0.3fr;
   grid-template-rows: 1fr 3fr;
   width: 90%;
-  height: 500px;
+  height: auto;
+  padding-bottom: 4rem;
   border-radius: 50px;
   background: rgb(1, 86, 111);
   background: linear-gradient(
@@ -129,7 +130,7 @@ div ul li:hover {
   align-self: center;
 }
 
-.content,.pic{
+.content,.pic,.btn{
   grid-row: 2/2;
   grid-column: 2/2;
 }
@@ -138,20 +139,31 @@ div ul li:hover {
   max-width: 50%;
   justify-self: end;
   align-self: center;
-  margin-right: 10rem;
+  margin-right: 4rem;
 }
 
 .pic{
-    width: 189px;
-    height: 252px;
+    width: 283.5px;
+    height: 378px;
     align-self: start;
-    margin-left: 7rem;
-    margin-top: 3rem;
+    margin-left: 5rem;
     border: 5px solid rgb(0, 61, 80);
     border-radius: 10px;
     transition: border-color 0.3s;
 }
 
 .pic:hover{
-    border-color: rgba(0, 120, 154, 1);
+    border-color: rgb(216, 246, 255);
+}
+
+.btn{
+  width:auto;
+  font-family: acorn;
+  align-self: calc();
+  justify-self: center;
+  padding: 10px 14px;
+  border-radius: 5px;
+  color: #036985;
+  background-color: white;
+  border: 1px solid #035b73;
 }

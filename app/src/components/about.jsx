@@ -11,7 +11,8 @@ function About() {
                         My main focus is on crafting responsive and visually appealing web experiences.
                         While my expertise lies in frontend development, I also work on backend projects, ensuring seamless integration and functionality.
                         I'm always excited to take on new challenges and continue growing in the world of web development.
-                    </p>
+            </p>
+            <button className='btn'>Resume</button>
         </div>
     )
 }
